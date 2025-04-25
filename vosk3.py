@@ -80,9 +80,10 @@ def transcribe(filename, model_path):
 
     pprint.pprint(transcription)
 
-## args:
-# filename = "midudev1.mp3"
-# model_path = "vosk-model-es-0.42"
+
+# vosk-model-es-0.42
+filename = "midudev1.mp3"
+model_path = "vosk-model-es-0.42"
 
 parser = argparse.ArgumentParser(description='Descripción de tu script')
 # Añadir argumentos
@@ -93,4 +94,5 @@ parser.add_argument('--verbose', action='store_true', help='Mostrar información
 # Parsear los argumentos
 args = parser.parse_args()
 
-transcribe(args.filename, args.model_path)
+transcribe(filename, model_path)
+
